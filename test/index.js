@@ -1,5 +1,6 @@
 /* eslint-env mocha */
 /* eslint-disable func-names, prefer-arrow-callback, no-var */
+require('jsdom-global')();
 var chai = require('chai');
 var arraysEqual = require('../dist').default;
 
