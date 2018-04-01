@@ -6,22 +6,21 @@
   "extends": [
     "airbnb"
   ],
+  "parser": "typescript-eslint-parser",
   "parserOptions": {
     "sourceType": "module"
   },
   "plugins": [
     "import",
-    "mocha"
+    "mocha",
+    "typescript"
   ],
   "settings": {
     "import/resolver": {
-      "meteor": {
+      "node": true,
+      "eslint-import-resolver-typescript": {
         "extensions": [
-          ".js",
-          ".jsx"
-        ],
-        "moduleDirectory": [
-          "node_modules"
+          ".ts"
         ]
       }
     }

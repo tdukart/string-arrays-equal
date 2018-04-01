@@ -6,19 +6,19 @@
  * @returns {boolean}
  */
 function stringArraysEqual(arrayA: string[], arrayB: string[]): boolean {
-    if (arrayA.length !== arrayB.length) {
-        return false;
-    }
+  if (arrayA.length !== arrayB.length) {
+    return false;
+  }
 
-    // Sort the arrays.
-    const sortedA = arrayA.sort();
-    const sortedB = arrayB.sort();
-    for (let i = 0; i < sortedA.length; i += 1) {
-        if (sortedA[i] !== sortedB[i]) {
-            return false;
-        }
+  // Sort the arrays.
+  const sortedA = arrayA.sort();
+  const sortedB = arrayB.sort();
+  for (let i = 0; i < sortedA.length; i += 1) {
+    if (sortedA[i] !== sortedB[i]) {
+      return false;
     }
-    return true;
+  }
+  return true;
 }
 
 export default stringArraysEqual;
