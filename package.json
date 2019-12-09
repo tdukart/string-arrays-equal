@@ -1,6 +1,6 @@
 {
   "name": "string-arrays-equal",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Lightweight test to see if two arrays of strings are equal, ignoring order.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
